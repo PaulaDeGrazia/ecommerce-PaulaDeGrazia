@@ -1,0 +1,348 @@
+/*Reset*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* estilos del header y nav, son iguales en todos los html*/
+
+body{
+    background-color: whitesmoke;
+}
+
+header{
+    background-color: whitesmoke;
+}
+
+h1{
+    color: #DA0037;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+nav ul{
+    background-color: #171717;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li{ 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #D8E9A8;
+    padding: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #D8E9A8;
+}
+
+.html{
+    color: #D8E9A8;
+}
+
+nav ul li:hover{
+    background-color: #E63E6D;
+    font-weight: bolder;
+}
+
+/*Estilos del footer, es igual en todos los html*/
+
+footer{
+    background-color: #171717;
+    justify-content: center;
+    color: #D8E9A8;
+    position: relative; 
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.footer-inf{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 1rem;
+}
+
+.footer-contact{
+    font-size: 0.4rem;
+    font-weight: lighter;
+    color: #D8E9A8;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-nav-html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #D8E9A8;
+}
+
+.footer-redirigir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer-nav-html ul li a{
+    text-decoration: none;
+    color: #D8E9A8;
+}
+
+.footer-redirigir ul li:hover{
+    background-color: #E63E6D;
+    font-weight: bolder;
+}
+
+.derecho-autor{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.5rem;
+    font-weight: lighter;
+    padding: 0.5rem;
+}
+
+/*Main del index*/
+
+.main-index{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(1fr 1fr 1fr 1fr);
+    grid-template-areas: "sec-new-arrivals"
+                         "sec-sale";
+    row-gap: 2rem;
+}
+
+.sec-new-arrivals{
+    background-color: #68A7AD;
+    width: 80%;
+    margin: 1rem auto;
+    flex-wrap: wrap;
+}
+
+.img-sec{
+    width: 100%;
+    height: 60%;
+}
+
+.sec-new-arrivals h2{
+    padding: 5rem 0 5rem 2rem;
+    font-size: 2rem;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.sec-sale{
+    background-color: #FFF338;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.sec-sale h2{
+    padding: 5rem 2rem 5rem;
+    font-size: 2rem;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: right;
+}
+
+/* Estilos del main de html Ayuda*/
+
+.main-ayuda{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr 1fr 1fr 1fr);
+    grid-template-areas: "sec-como-comprar"
+                         "sec-envios";
+    row-gap: 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.sec-como-comprar{
+    background-color: #B6F5C0;
+    width: 80%;
+    margin: 1rem auto;
+    position: relative;
+}
+
+.img-como-comprar{
+    width: 100%;
+    height: auto;
+}
+
+.h2-como-comprar{
+    font-size: 2rem;
+    font-family: 'Archivo Black', sans-serif;
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+}
+
+.parrafo-como-comprar{
+    font-family: 'Darker Grotesque', sans-serif;
+    text-align: left;
+    padding: 1rem 2rem 1rem 1.5rem;
+    font-weight: bolder;
+}
+
+.sec-envios{
+    background-color: #F5B6B6;
+    width: 80%;
+    margin: 1rem auto;
+    position: relative;
+}
+
+.parrafo-envios{
+    font-family: 'Darker Grotesque', sans-serif;
+    text-align: right;
+    padding: 0.5rem 1.5rem 1rem 2rem;
+    font-weight: bold;
+}
+
+.h2-envios{
+    font-size: 2rem;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: right;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.img-envios{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* MQ 
+
+@media screen and (min-width: 1200px) {
+
+    /* Header y nav
+
+    h1{
+        font-size: 6rem;
+    }
+      
+    nav ul li{ 
+        font-size: 1.5rem;
+    }
+
+    /* Footer 
+
+    .footer-contact{
+        font-size: 1rem;
+    }
+
+    .footer-nav-html{
+        font-size: 1.5rem;
+    }
+
+    /* Main Index para desktop 
+
+    .sec-new-arrivals{
+        display: flex;
+        background-color: #0D5A65;
+        width: 80%;
+        height: 700px;
+        margin: 1rem auto;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .img-sec{
+        width: auto;
+        height: 100%;
+    }
+    
+    .sec-new-arrivals h2{
+        padding-left: 3rem;
+        font-size: 3rem;
+        font-family: 'Archivo Black', sans-serif;
+    }
+    
+    .sec-sale{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        height: 700px;
+        margin-top: 4rem; 
+        margin-bottom: 4rem;
+    }
+    
+    .sec-sale h2{
+        text-align: right;
+        font-size: 3rem;
+        font-family: 'Archivo Black', sans-serif;
+        padding-right: 3rem;
+    }
+
+    /* Main ayuda
+
+    .sec-como-comprar{
+        display: flex;
+        align-items: center;
+        background-color: #B6F5C0;
+        width: 80%;
+        height: 700px;
+        position: relative;
+    }
+
+    .img-como-comprar{
+        width: auto;
+        height: 100%;
+    }
+
+    .h2-como-comprar{
+        font-size: 4rem;
+        top: 18rem;
+        left: 4rem;
+    }
+
+    .parrafo-como-comprar{
+        font-size: 1.5rem;
+        padding: 3rem 2rem 1rem 1.5rem;
+        font-weight: lighter;
+    }
+
+    .sec-envios{
+        display: flex;
+        align-items: center;
+        height: 700px;
+        width: 80%;
+        margin: 1rem auto;
+        position: relative;
+    }
+
+    .parrafo-envios{
+        font-family: 'Darker Grotesque', sans-serif;
+        text-align: right;
+        padding: 0.5rem 1.5rem 1rem 2rem;
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+
+    .h2-envios{
+        font-size: 4rem;
+        bottom: 19rem;
+        right: 4rem;
+    }
+
+    .img-envios{
+        width: 60%;
+        height: 100%;
+    }
+
+}
+*/
