@@ -37,6 +37,7 @@ nav ul li{
     font-size: 0.8rem;
     color: #D8E9A8;
     padding: 1rem;
+    transition: 2s;
 }
 
 nav ul li a{
@@ -51,6 +52,9 @@ nav ul li a{
 nav ul li:hover{
     background-color: #E63E6D;
     font-weight: bolder;
+    transform: scale(1.05);
+    animation: headShake;
+    animation-duration: 4s;
 }
 
 /*Estilos del footer, es igual en todos los html*/
@@ -223,13 +227,11 @@ footer{
 }
 
 
-
-
-/* MQ 
+/* MQ */
 
 @media screen and (min-width: 1200px) {
 
-    /* Header y nav
+    /* Header y nav */
 
     h1{
         font-size: 6rem;
@@ -239,7 +241,7 @@ footer{
         font-size: 1.5rem;
     }
 
-    /* Footer 
+    /* Footer */
 
     .footer-contact{
         font-size: 1rem;
@@ -249,7 +251,7 @@ footer{
         font-size: 1.5rem;
     }
 
-    /* Main Index para desktop 
+    /* Main Index para desktop */
 
     .sec-new-arrivals{
         display: flex;
@@ -288,7 +290,7 @@ footer{
         padding-right: 3rem;
     }
 
-    /* Main ayuda
+    /* Main ayuda */
 
     .sec-como-comprar{
         display: flex;
@@ -345,4 +347,5 @@ footer{
     }
 
 }
-*/
+
+

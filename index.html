@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--LINK DE ANIMATE-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- LINK DE CSS-->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -35,18 +39,25 @@
     
     <main class="main-index">
     
+        <div data-aos="fade-right">
         <section class="sec-new-arrivals">
             <img class="img-sec" src="HOME/newarrivals.jpg" alt="una chica rubia con remera roja que tiene una margarita en la boca">
-            <h2>NEW <br> ARRIVALS</h2>
+            <h2 class="animate__animated animate__fadeIn">NEW <br> ARRIVALS</h2>
         </section>
+        </div>
 
+        <div data-aos="fade-left">
         <section class="sec-sale">
         <img class="img-sec" src="HOME/sale.jpg" alt="">
-        <h2>SALE</h2> 
-        </section> 
+        <h2 class="animate__animated animate__fadeIn">SALE</h2> 
+        </section>
+        </div> 
     
     </main>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!--Aclaración: coloqué redes sociales por demás, pues el emprendimiento sólo cuenta con instagram por ahora, pero la idea es que se haga todas las redes sociales, por eso lo dejo plasmado, los enlaces funcionan bien, pero aún no están creados-->
     <footer>
         <div class="footer-inf">
