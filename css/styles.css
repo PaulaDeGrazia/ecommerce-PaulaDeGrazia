@@ -54,7 +54,7 @@ nav ul li:hover{
     font-weight: bolder;
     transform: scale(1.05);
     animation: headShake;
-    animation-duration: 4s;
+    animation-duration: 2s;
 }
 
 /*Estilos del footer, es igual en todos los html*/
